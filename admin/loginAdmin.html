@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>农互金在线-首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top nav_top_self" role="navigation" id="menu-nav">
+    <div class="container container_self">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">农互金在线</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">管理员登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 主要内容 -->
+<div class="container summary summary_self">
+    <hr>
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-8 text3_self" >
+            <h2>登录农互金-管理员</h2>
+            <div class="input-group">
+            	<span class="input-group-addon">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
+            	<input type="text" class="form-control" placeholder="邮箱" id="email" name="email" aria-describedby="basic-addon1" id="username">
+            </div>
+            <br />
+            <div class="input-group">
+            	<span class="input-group-addon">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+            	<input type="password" class="form-control" placeholder="密码" id="password" name="password" aria-describedby="basic-addon1" id="password">
+            </div>
+            <br />
+            <button class="btn btn-primary btn_self4" id="loginBtn">登录</button>
+            <a href="findPw.html"><button class="btn btn-primary btn_self5">忘记密码</button></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="col-md-4 text3_self back_self1">
+        	<br />
+            <p class="lead">还没注册帐号？ 立即注册：</p>
+            <a href="register.html"><button class="btn btn-primary btn_self5">立即注册</button></a>
+            <br />
+            <br />
+            <hr>
+            <p class="lead">使用其他账号直接登录：</p>
+            <a href="wxlogin.html"><button class="btn btn-primary btn_self6">微信登录</button></a>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+</div>
+
+<!--start[footer]-->
+<div class="footer footer_self">
+    <div class="container con2_self">
+        <div class="row">
+            <div class="col-md-6 n-group">
+                <h3>关于我们</h3>
+                <p>农互金在线，将互联网+金融模式应用于农业项目的投融资领域。立志打造一个农业项目投资交易平台：农户可以轻松申报农业项目，获取投资；投资人可以全方位查看农业项目信息，计算预期投资回报，进行买入卖出的投资交易行为，以及远程监督项目日常管理。在有效降低农户和投资人间信息不对称程度的基础上为农业项目吸引更多的投资、使投资交易更加灵活有效，达到精准扶贫和投资回报的双赢！<br />
+                </p>
+                <br />
+                <p class="copyright">© 2017 dongxin&qianwen All rights reserved.</p>
+            </div>
+            <div class="col-lg-offset-1 col-md-2 m-group">
+                <h3>相关链接</h3>
+                <ul>
+                    <li><a href="http://www.zgny.com.cn/" class="href">中国农业网</a></li>
+                    <li><a href="http://www.agri.cn/" class="href">中国农业信息网</a></li>
+                    <li><a href="http://www.moa.gov.cn/" class="href">中国农业部</a></li>
+                    <li><a href="http://www.nongcun5.com/" class="href">中国农村网</a></li>
+                    <li><a href="http://www.ntv.cn/" class="href">中国农视网</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-offset-1 col-md-2 m-group">
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="http://www.scu.edu.cn/" class="href">四川大学</a></li>
+                    <li><a href="http://tuanwei.scu.edu.cn/" class="href">四川大学共青团委</a></li>
+                    <li><a href="http://cs.scu.edu.cn/" class="href">川大计算机学院</a></li>
+                    <li><a href="http://www.fyscu.com/" class="href">飞扬俱乐部</a></li>
+                    <li><a href="http://jy.scu.edu.cn/" class="href">四川大学就业网</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="myjs/loginAdmin.js"></script>
+<!-- <script>
+    $(document).ready(function(){
+        $("#login_btn").click(function(data){
+            $.ajax({
+                type : "get",
+                async:false,
+                url : "http://119.29.224.224:8081/datacal/login?username="+$("#username").val()+"&password="+$("#password").val(),
+                dataType : "json",
+                success : function(data){
+                    if("true"!=data){
+                        window.open("rear_end/index.html");
+                    }else{
+                        window.open("login.html");
+                    }
+                },
+                error:function(){
+                    alert("fail!");
+                }
+            });
+        });
+    });
+</script> -->
+</body>
+</html>
